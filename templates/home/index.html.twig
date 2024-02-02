@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Star Wars API - Home{% endblock %}
+
+{% block body %}
+    {% for character in characters %}
+        <article>
+            <a href="{{ 
+                path(
+                    'app_character',
+                    {
+                        'id': character.url|replace({
+                            'https://swapi.py4e.com/api/people/': '',
+                            '/': ''
+                        }), 
+                    }
+                )
+            }}">
+                {{ character.name }}
+            </a>
+        </article>
+    {% endfor %}
+{% endblock %}
