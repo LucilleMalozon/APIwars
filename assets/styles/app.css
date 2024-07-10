@@ -1,1 +1,19 @@
+@font-face {
+  font-family: "Starjout";
+  src: url("Starjout.ttf") format("TrueType");
+}
 
+h1 {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: Starjout, sans-serif;
+  font-size: 60px;
+  color: #11191f;
+  filter: drop-shadow(0 0.15vw 0.3vw #fffb0e)
+    drop-shadow(0 0.15vw 0.3vw #8a8942);
+}
+
+secondary {
+  color: #fffb0e !important;
+}
